@@ -1,0 +1,60 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../styles/navbar.css';
+
+const Navbar = () => (
+  <nav className="navbar">
+    <NavLink
+      exact
+      activeClassName="navbar__link--active"
+      className="navbar__link"
+      to="/"
+    >
+      Home
+    </NavLink>
+    <NavLink
+      activeClassName="navbar__link--active"
+      className="navbar__link"
+      to="/products"
+    >
+      Products
+    </NavLink>
+    <NavLink
+      activeClassName="navbar__link--active"
+      className="navbar__link"
+      to="/contacts"
+    >
+      Contacts
+    </NavLink>
+    <NavLink
+      activeClassName="navbar__link--active"
+      className="navbar__link"
+      to="/Mens"
+    >
+      Mens
+    </NavLink>
+    <NavLink
+      activeClassName="navbar__link--active"
+      className="navbar__link"
+      to="/Women"
+    >
+      Women
+    </NavLink>
+    <NavLink
+      activeClassName="navbar__link--active"
+      className="navbar__link"
+      to="/kids"
+    >
+      Kids
+    </NavLink>
+    <NavLink
+      activeClassName="navbar__link--active"
+      className="navbar__link"
+      to="/Cart"
+    >
+      Cart
+    </NavLink>
+  </nav>
+);
+
+export default Navbar;
