@@ -7,6 +7,7 @@ import Cart from '../pages/cart';
 import Mens from '../pages/mens';
 import Women from '../pages/women';
 import Kids from '../pages/kids';
+import Myaccount from '../pages/myaccount';
 
 const Routes = () => (
   <Switch>
@@ -19,6 +20,7 @@ const Routes = () => (
     <Route path="/mens" component={Mens} />
     <Route path="/kids" component={Kids} />
     <Route path="/cart" component={Cart} />
+    <Route path="/myaccount" component={Myaccount} />
   </Switch>
 );
 

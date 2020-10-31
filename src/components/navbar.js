@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/navbar.css';
+import { HiShoppingCart } from 'react-icons/hi';
+import { RiAccountPinBoxLine } from 'react-icons/ri';
 
 const Navbar = () => (
   <nav className="navbar">
@@ -50,9 +52,16 @@ const Navbar = () => (
     <NavLink
       activeClassName="navbar__link--active"
       className="navbar__link"
+      to="/Myaccount"
+    >
+      <RiAccountPinBoxLine />
+    </NavLink>
+    <NavLink
+      activeClassName="navbar__link--active"
+      className="navbar__link"
       to="/Cart"
     >
-      Cart
+      <HiShoppingCart />
     </NavLink>
   </nav>
 );
